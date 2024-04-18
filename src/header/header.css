@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+header .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .left img {
+    height: 50px;
+}
+
+header .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .right img {
+    height: 50px;
+}
