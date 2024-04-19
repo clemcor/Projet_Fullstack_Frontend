@@ -1,10 +1,14 @@
 import { useParams } from 'react-router-dom';
 import Header from '../header/header';
 import './oneproject.css';
+import { useState } from 'react';
+import React, { useEffect } from 'react';
+
 
 function OneProject() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
+  
 
   useEffect(() => {
     const getProject = async () => {
