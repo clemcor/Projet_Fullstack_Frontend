@@ -1,21 +1,20 @@
 .project-presentation {
-    margin: auto;
-    text-align: center;
-  }
+  margin: auto;
+  text-align: center;
+}
 
 .container {
-    display: flex;
-    
-    flex-direction: column;
-    align-items: center; /* Centrage horizontal */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .div-with-shadow {
-    width: 200px;
-    height: 100px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
-    cursor: pointer; /* Curseur indiquant que la div est cliquable */
-    margin-bottom: 20px; /* Espacement entre les divs */
-  }
+.div-with-shadow {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-bottom: 20px;
+}

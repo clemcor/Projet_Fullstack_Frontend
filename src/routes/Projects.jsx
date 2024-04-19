@@ -9,7 +9,7 @@ function Projects() {
     const [project, getallProjects] = useState();
     const getProjects = async () => {
         console.log('Affichage des projets');
-        const response = await fetch('http://localhost:3000/api/projects' );
+        const response = await fetch(import.meta.env.VITE_SERVER_BACKEND_URL + '/api/projects' );
 
         if (!response.ok) {
             // Gérer l'erreur
@@ -35,10 +35,13 @@ function Projects() {
               
          <div className='project-presentation'>
               <Header />
+            <br />
 
-              <h1>Bienvenue sur notre site!</h1>
-              <button onClick={() => window.location.href = '/newproject'}>Créer un projet</button>
-              <p>Ceci est un bouton permettant de créer un projet</p>
+              <button onClick={() => window.location.href = '/projects/newProject'}>Créer un projet</button>
+              <br />
+                <br />
+
+              
 
               
               <div className="container">

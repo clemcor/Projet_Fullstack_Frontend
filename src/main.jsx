@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from "./routes/home";
 import Projects from "./routes/Projects";
 import OneProject from "./routes/OneProject";
 import NewProject from "./routes/NewProject";
+import UpdateProject from "./routes/UpdateProject";
+import Email from "./routes/Email";
+import Presentation from "./routes/PresentationPage";
 
 import {
   createBrowserRouter,
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
 
-    element: <Home />,
+    element: <Projects />,
   },
   {
     path: "/projects",
@@ -34,6 +36,19 @@ const router = createBrowserRouter([
   {
     path: "/projects/newProject",
     element: <NewProject />,
+  },
+  {
+    path: "/projects/update/:id",
+
+    element: <UpdateProject />,
+  },
+  {
+    path: "/email",
+    element: <Email />,
+  },
+  {
+    path: "/presentation",
+    element: <Presentation />,
   },
 ]);
 

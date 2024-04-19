@@ -1,27 +1,25 @@
+.app {
+  width: 100%;
+  background-color: #678ef1;
+  padding: 10px 0;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-header .left {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
+.left img {
+  width: 5%;
+  float: left;
+  height: auto;
+  border-radius: 50%;
 }
 
-header .left img {
-    height: 50px;
-}
-
-header .right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header .right img {
-    height: 50px;
+.right img {
+  width: 10%;
+  float: right;
+  height: auto;
 }

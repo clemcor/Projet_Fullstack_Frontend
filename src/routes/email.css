@@ -1,0 +1,38 @@
+.email-page {
+  font-family: Arial, sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.email-form {
+  border: 1px solid #ccc;
+  padding: 2%;
+}
+
+.email-form h2 {
+  margin-top: 0;
+}
+
+.email-form label {
+  display: block;
+  margin-bottom: 2%;
+}
+
+.email-form input[type="text"],
+.email-form textarea {
+  width: 94%;
+  margin-bottom: 2%;
+}
+
+.email-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 2% 4%;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  background-color: #0056b3;
+}

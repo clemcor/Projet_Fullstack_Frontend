@@ -1,0 +1,41 @@
+.one-project-page {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.one-project-page h1 {
+  margin-top: 0;
+}
+
+.one-project-page p {
+  margin-bottom: 10px;
+}
+
+.one-project-page button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.one-project-page button:nth-child(2) {
+  background-color: #007bff;
+}
+
+.one-project-page button:hover {
+  background-color: #c82333;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
