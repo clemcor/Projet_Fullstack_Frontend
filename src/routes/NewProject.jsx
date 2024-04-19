@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import Header from '../header/header';
-import './newproject.css'; // Import du fichier CSS pour styliser la page
+import './newproject.css';
 
 function NewProject() {
     const [project, setProject] = useState();
 
-    const createProject = async (title,descriptionIntro, description, keywords, imageLink, githubLink, imageList, viewCount) => {
+    const createProject = async (title, descriptionIntro, description, keywords, imageLink, githubLink, imageList, viewCount) => {
         console.log('Création d\'un projet');
         const response = await fetch(import.meta.env.VITE_SERVER_BACKEND_URL + '/api/projects', {
             method: 'POST',
@@ -22,20 +22,15 @@ function NewProject() {
                 "listeImmages": imageList,
                 "nbVue": viewCount
             })
-        
         });
         if (!response.ok) {
-            // Gérer l'erreur
             console.error('Une erreur s\'est produite:', response.statusText);
         } else {
             const data = await response.json();
             console.log('Réponse du serveur:', data);
             setProject(data);
             console.log('projet id:', data._id);
-            //renvoyer vers une autre page web
             window.location.href = `/projects/${data._id}`;
-           
-            
         }
     };
 
@@ -44,7 +39,6 @@ function NewProject() {
             <Header />
             <br />
             <div className="new-project-page">
-                
                 <h1>New Project</h1>
                 <input type="text" placeholder="Title" />
                 <input type="text" placeholder="Description introductive" maxLength={80} />

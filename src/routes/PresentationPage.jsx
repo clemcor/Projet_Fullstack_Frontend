@@ -1,16 +1,14 @@
 import Header from '../header/header';
-import './presentationPage.css'; // Import du fichier CSS pour styliser la page
+import './presentationPage.css';
 
 function PresentationPage() {
-    // Définition des informations de présentation
     const name = "Cordier Clément";
     const dateOfBirth = "01/04/2002";
-    const age = calculateAge(dateOfBirth); // Appel de la fonction pour calculer l'âge
+    const age = calculateAge(dateOfBirth);
     const description = "Description de toi-même...";
     const githubLink = "https://github.com/clemcor";
-    const photoPath = "/photoClement.png"; // Chemin vers ta photo
+    const photoPath = "/photoClement.png";
 
-    // Fonction pour calculer l'âge à partir de la date de naissance
     function calculateAge(dateString) {
         const today = new Date();
         const birthDate = new Date(dateString);
@@ -36,17 +34,13 @@ function PresentationPage() {
                         <p><strong>Date de naissance:</strong> {dateOfBirth}</p>
                         <p><strong>Âge:</strong> {age}</p>
                         <p><strong>Description:</strong> {description}</p>
-                        {/* Lien GitHub sous forme d'une image cliquable */}
                         <a href={githubLink} target="_blank" rel="noopener noreferrer">
                             <div className="githubImg">
                                 <img src="/github.png" alt="GitHub" />
                                 <a href="/email">
-                                <img src="/courrier.png" alt="contact" />
+                                    <img src="/courrier.png" alt="contact" />
                                 </a>
                             </div>
-                            
-                                
-                            
                         </a>
                     </div>
                 </div>
